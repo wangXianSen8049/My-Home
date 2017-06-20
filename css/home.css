@@ -95,6 +95,24 @@ html body section a dd {
   text-align: center;
   color: white;
 }
+html body #yifu {
+  width: 100%;
+  height: auto;
+}
+html body #yifu img {
+  width: 1rem;
+  height: .3rem;
+  display: block;
+  margin: .1rem;
+}
+html body #yifu a {
+  width: 100%;
+  height: auto;
+}
+html body #yifu a img {
+  height: auto;
+  width: 100%;
+}
 html body #new {
   width: 100%;
   height: auto;
