@@ -7,6 +7,7 @@ window.onload=function(){
    }
 	zishiying();
 	banner();
+	news();
 	
 }
 //宽度自适应
@@ -26,4 +27,30 @@ function banner(){
     pagination: '.swiper-pagination',
     
   }) 
+}
+function news(){
+	var url="json/new.json";
+	$.ajax({
+        type: "get",
+        dataType: "json",
+        url: url,
+        data:null,
+        success: function (data){
+        	console.log(data);
+        	creat(data);
+        }
+    });
+}
+function creat(data){
+	$.each(data.result.data, function(id, obj) {
+		var $dom=$("<li>"+
+						"<a href="+obj.url+">"+
+							"<img src="+obj.thumbnail_pic_s+"/>"+
+							"<p>"+obj.title+"</p>"+
+						"</a>"+
+					"</li>");
+		
+		$(".new-data").append($dom);
+	});
+	
 }
