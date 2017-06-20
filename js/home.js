@@ -20,6 +20,7 @@ function zishiying(){
 function banner(){
 	var mySwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal',
+    autoplayDisableOnInteraction : false,
     autoplay: 3000,//可选选项，自动滑动
     loop: true,
     
