@@ -125,7 +125,6 @@ html body footer {
   bottom: 0;
   display: flex;
   color: white;
-  margin-top: -1px;
   background: black;
   justify-content: space-around;
   align-items: center;
