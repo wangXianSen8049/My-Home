@@ -1,5 +1,6 @@
+
 window.onload=function(){
-		/*屏幕改变事件— 修改html font-size大小*/
+		/*屏幕改变事件— 修改html font-size大小 wangbei*/
 	window.onresize = function(){
 		var width=$(document.body).outerWidth(true);
         var offWidth =width /375*100;
